@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      content="IE=edge"
+    />
+    <title>Our Chefs</title>
+    <!-- This is the connection to the css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- pre-load images -->
+    <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg" />
+  </head>
+  <body id="top">
+    <!-- This is the pre-loader styles the loading page and the whole circle stuff -->
+    <div class="preload" data-preload>
+      <div class="circle"></div>
+      <p class="text">Grilli</p>
+    </div>
+
+    <!-- The top nav bar is next -->
+    <div class="topbar">
+      <div class="container">
+        <address class="topbar-item">
+          <div class="icon">
+            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+          </div>
+          <span class="span">Restaurant St Delicious City, Accra 6332, GH</span>
+        </address>
+
+        <div class="separator"></div>
+
+        <div class="topbar-item item-2">
+          <div class="icon">
+            <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span">Daily : 8.00 am to 10.00 pm</span>
+        </div>
+        <a href="tel:+233 12 345 6789" class="topbar-item link">
+          <div class="icon">
+            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+          </div>
+          <span class="span">+233 12 345 6789</span>
+        </a>
+
+        <div class="separator"></div>
+
+        <a href="mailto:leslie.paul@tech.com" class="topbar-item link">
+          <div class="icon">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span">leslie.paul.kitchen@tech.com</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Header next -->
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="./assets/images/logo.svg"
+            alt="Grilli - Home"
+            width="160"
+            height="50"
+          />
+        </a>
+        <nav class="navbar" data-navbar>
+          <button class="close-btn" aria-label="close-menu" data-nav-toggler>
+            <ion-icon name="close-outline " aria-hidden="true"></ion-icon>
+          </button>
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" alt="Grilli - Home" />
+          </a>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Home</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#menu" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Menus</span>
+              </a>
+            </li>
+            <!-- <li class="navbar-list">
+              <a href="#menu" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Menu</span>
+              </a>
+            </li> -->
+            <li class="navbar-item">
+              <a href="#about" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">About Us</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Our Chefs</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#contact" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Contact Us</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="text-center">
+            <p class="headline-1 navbar-title">Visit Us</p>
+
+            <address class="body-4">
+              Restaurant St, Delicious City, <br />
+              Accra 233, GH
+            </address>
+
+            <p class="body-4 navbar-text">Open: 9.30 am - 2.30 pm</p>
+
+            <a
+              href="mailto:leslie.paul.kitchen@tech.com
+            "
+              class="body-4 sidebar-link"
+              >leslie.paul.kitchen@teh.com</a
+            >
+
+            <div class="separator"></div>
+            <p class="contact-label">Booking request</p>
+            <a
+              href="tel: +233 12 345 6789"
+              class="body-1 contact-number hover-underline"
+              >+233 12 345 6789</a
+            >
+          </div>
+        </nav>
+        <a href="#" class="btn btn-secondary">
+          <span class="text text-1">Find a Table</span>
+          <span class="text text-2" aria-hidden="true">Find a table</span>
+        </a>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+    <!-- header ends -->
+    <!-- 
+Hero content -->
+
+    <main>
+      <article>
+        <section class="hero text-center data-overlay" id="home">
+          <ul class="hero-slider" data-hero-slider>
+            <li class="slider-item active" data-hero-slider>
+              <div class="slider-bg">
+                <img
+                  src="./assets/images/hero-slider-1.jpg"
+                  alt="img-cover"
+                  width="1880"
+                  height="950"
+                />
+              </div>
+
+              <p class="label-2 section-subtitle slider-reveal">
+                Traditional & Spectacular
+              </p>
+
+              <h1 class="display-1 hero-title slider-reveal">
+                For the Love of <br />
+                Delicious food
+              </h1>
+              <p class="body-2 hero-text slider-reveal">
+                Come with family & feel the joy of mouthwatering food
+              </p>
+
+              <a href="#" class="btn btn-primary slider-reveal">
+                <span class="text text-1">View Our Menu</span>
+
+                <span class="text text-2" aria-hidden="true"
+                  >View Our Menu</span
+                >
+              </a>
+            </li>
+
+            <li class="slider-item" data-hero-slider-item>
+              <div class="slider-bg">
+                <img
+                  src="./assets/images/hero-slider-2.jpg"
+                  width="1880"
+                  height="950"
+                  alt=""
+                  class="img-cover"
+                />
+              </div>
+
+              <p class="label-2 section-subtitle slider-reveal">
+                delightful experience
+              </p>
+
+              <h1 class="display-1 hero-title slider-reveal">
+                Flavors Inspired by <br />
+                the Seasons
+              </h1>
+
+              <p class="body-2 hero-text slider-reveal">
+                Come with family & feel the joy of mouthwatering food
+              </p>
+
+              <a href="#" class="btn btn-primary slider-reveal">
+                <span class="text text-1">View Our Menu</span>
+
+                <span class="text text-2" aria-hidden="true"
+                  >View Our Menu</span
+                >
+              </a>
+            </li>
+
+            <li class="slider-item" data-hero-slider-item>
+              <div class="slider-bg">
+                <img
+                  src="./assets/images/hero-slider-3.jpg"
+                  width="1880"
+                  height="950"
+                  alt=""
+                  class="img-cover"
+                />
+              </div>
+
+              <p class="label-2 section-subtitle slider-reveal">
+                amazing & delicious
+              </p>
+
+              <h1 class="display-1 hero-title slider-reveal">
+                Where every flavor <br />
+                tells a story
+              </h1>
+
+              <p class="body-2 hero-text slider-reveal">
+                Come with family & feel the joy of mouthwatering food
+              </p>
+
+              <a href="#" class="btn btn-primary slider-reveal">
+                <span class="text text-1">View Our Menu</span>
+
+                <span class="text text-2" aria-hidden="true"
+                  >View Our Menu</span
+                >
+              </a>
+            </li>
+          </ul>
+          <button
+            class="slider-btn prev"
+            aria-label="slide to previous"
+            data-prev-btn
+          >
+            <ion-icon name="chevron-back"></ion-icon>
+          </button>
+
+          <button
+            class="slider-btn next"
+            aria-label="slide to next"
+            data-next-btn
+          >
+            <ion-icon name="chevron-forward"></ion-icon>
+          </button>
+        </section>
+      </article>
+    </main>
+    <script src="./assets/js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
